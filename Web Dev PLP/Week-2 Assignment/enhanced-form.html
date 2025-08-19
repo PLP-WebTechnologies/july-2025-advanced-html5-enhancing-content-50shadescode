@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!--Header section for the main page-->
+    <h1>Enhanced  HTML5 Form</h1>
+    <p>Week 2 Assignment - Advanced HTML5 Enhancing Content</p>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <section id="introduction">
+            <!-- Section heading -->
+            <h2>Introduction</h2>
+            <!-- Paragraph describing purpose of the page -->
+            <p>This page demonstrates lists, tables, media, and an advanced HTML5 form.</p>
+        </section>
+        
+        <section id="content">
+            <!-- list section -->
+            <h2>Topics Covered </h2>
+            <!-- Unordered list -->
+            <ul>
+                <li>HTML 5 Semantics Tags</li>
+                <li>Forms & Variation</li>
+                <li>Media & Tables</li>
+            </ul>
+            <!-- Table Section -->
+            <h2>Sample Table</h2>
+            <!--Table element with borders outlined-->
+            <table border="1">
+                <!--Table header-->
+                <thead>
+                    <tr>
+                        <th>topic</th>
+                        <th>Description</th>
+                    </tr>                       </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 Forms</td>
+                        <td>Include various inputs fields with validation</td>
+                    </tr>
+                    <tr>
+                        <td>Media</td>
+                        <td>Images, audio, and video elements</td>
+                    </tr>
+                <t/body>
+            </table>
+            <!-- Media Section -->
+            <h2>Sample Media</h2>
+            <!-- Image element with source URL and alt text -->
+            <img src="https://via.placeholder.com/150" alt="Sample Image">
+            <!-- Audio element with controls for playback -->
+            <audio controls>
+                <!-- Source file for audio and its type -->
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                <!-- Fallback text if audio is not supported -->
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!--HTML Form Section -->
+        <section id="form">
+            <h2>HTML5 Form</h2>
+            <!-- Form element: action="#" means data will not be sent anywhere yet, method="post" -->
+            <form action="#" method="post">
+                <!-- Text input for full name -->
+                <label for="fullname">Full Name:</label> <!-- Associates label with input via id -->
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                <br><br> <!-- Line breaks for spacing -->
+
+                <!-- Email input with validation -->
+                 <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <!-- Password input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <br><br>
+
+                <!-- Number input for age -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="100">
+                <br><br>
+
+                <!-- Radio buttons for gender -->
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female"> Female
+                <br><br>
+
+                !-- Checkbox input for subscription -->
+                <label for="subscribe">Subscribe:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <br><br>
+
+                <!-- Dropdown select for course -->
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select course</option> <!-- Default empty option -->
+                    <option value="webdev">Web Development</option>
+                    <option value="python">Python Programming</option>
+                    <option value="database">Database Management</option>
+                </select>
+                <br><br>
+
+                <!-- Textarea for comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Write your comments here..." rows="4" cols="50"></textarea>
+                <br><br>
+
+                <!-- Submit button -->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Advanced HTML5 Assignment</p>
+    </footer>
+</body>
+</html>
